@@ -1,4 +1,4 @@
-FROM node:14-alpine as build
+FROM node:14-alpine AS build
 WORKDIR /opt/app
 ADD *.json ./
 RUN npm install
@@ -10,7 +10,7 @@ FROM node:14-alpine
 WORKDIR /opt/app
 ADD package.json ./
 RUN npm install --only=prod
-COPY --from=build /opt/app/dist/api ./dist
+COPY --from=build /opt/app/dist/apps/api ./dist
 CMD ["node", "./dist/main.js"]
 
 
