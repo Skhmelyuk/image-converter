@@ -29,7 +29,7 @@
 		"app-root-path": "^3.0.0",
 		"date-fns": "^2.21.3",
 		"fs-extra": "^9.1.0",
-		"nestjs-rmq": "^2.0.6",
+		"nestjs-rmq": "2.0.6",
 		"reflect-metadata": "^0.1.13",
 		"rimraf": "^3.0.2",
 		"rxjs": "^6.6.3",
